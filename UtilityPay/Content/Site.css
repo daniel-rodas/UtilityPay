@@ -1,6 +1,12 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:#E1EEDC;
+    font-family: "proxima-nova-alt-ext-cond",sans-serif;
+    color:#1467A1;
+}
+
+h1,h2,h3,h4,h5,h6,p {font-family: "proxima-nova-alt-ext-cond",sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +27,16 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.btn-primary {
+  color: #1467A1;
+  background-color: #5BB693;
+  border-color: #1467A1;
+}
+
+.btn-default {
+  color: #1467A1;
+  background-color: #DDD584;
+  border-color: #1467A1;
 }

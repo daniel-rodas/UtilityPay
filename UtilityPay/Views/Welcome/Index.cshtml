@@ -5,7 +5,9 @@
 <div class="container">
     <h1>@ViewBag.ValueProposition[0]</h1>
     <button class="btn btn-lg btn-block btn-primary">@ViewBag.NextButtonValue[0]</button>
-    <button class="btn btn-lg btn-block btn-default">Skip</button>
+
+    @Html.ActionLink("Skip", "Register", "Account", null, new { @class = "btn btn-lg btn-block btn-default" })
+
 </div>
 
 

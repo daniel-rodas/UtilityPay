@@ -40,3 +40,23 @@ textarea {
   background-color: #DDD584;
   border-color: #1467A1;
 }
+
+.list-group-item {
+   /* background-color: #A5A5A5;*/
+    border: 1px solid transparent;
+
+    /* default fallback */
+background: rgb(128, 128, 128) transparent;
+/* nice browsers */
+background-color: rgba(128, 128, 128, 0.4);
+/* IE 6/7 */
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+/* IE8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
+}
+
+.panel-default > .panel-heading {
+    color: #DDD584;
+    background-color: #1467A1;
+    border-color: #1467A1;
+}

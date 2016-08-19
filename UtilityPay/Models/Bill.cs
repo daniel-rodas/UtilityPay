@@ -21,7 +21,7 @@ namespace UtilityPay.Models
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        public virtual DbSet<UtilityServiceAccountModel> UtilityServiceAccounts { get; set; }
+        public virtual DbSet<UtilityServiceAccount> UtilityServiceAccounts { get; set; }
         public virtual DbSet<Bill> Bills { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -41,7 +41,7 @@ namespace UtilityPay.Models
         public virtual BillCycle BillCycle { get; set; }
 
         public int UtilityServiceId { get; set; }
-        public virtual UtilityServiceAccountModel UtilityServiceAccount { get; set; }
+        public virtual UtilityServiceAccount UtilityServiceAccount { get; set; }
     }
 
     public class BillCycle

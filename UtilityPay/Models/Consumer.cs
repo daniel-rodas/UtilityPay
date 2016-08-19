@@ -1,9 +1,11 @@
 namespace UtilityPay.Models
 {
     using Interfaces;
+    using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Data.Entity;
     using System.Linq;
+    using System.Web.Services.Description;
 
     public class ConsumerContext : DbContext
     {
@@ -33,6 +35,11 @@ namespace UtilityPay.Models
 
     public class Consumer : IConsumer
     {
+        Consumer()
+        {
+
+        }
+
         public int Id { get; set; }
         public string Name { get; set; }
 

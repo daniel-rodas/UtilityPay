@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UtilityPay.Interfaces
 {
-    interface IConsumer
+    public interface IConsumer
     {
     }
 }

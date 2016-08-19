@@ -21,11 +21,13 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         
-        <img  class="img-responsive content-block" src="~/Content/images/logo@600px.png" />
-
-        @RenderBody()
+        <img  class="img-responsive center-block" src="~/Content/images/logo@600px.png" />
+        <div class="continer-fluid">
+            @RenderBody()
+        </div>    
+        
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - TiliPay</p>

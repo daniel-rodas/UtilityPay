@@ -8,20 +8,22 @@
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">Which Utility Services do you want manage?</h3>
+        <h2>@ViewBag.SomeString</h2>
     </div>
 
-    <ul class="list-group">
+    
     <form action="/" method="post">
-        <li class="list-group-item chechbox"><label><input type="checkbox" /> Sewege</label></li>
-        <li class="list-group-item chechbox"><label><input type="checkbox" /> SF Water</label></li>
-        <li class="list-group-item chechbox"><label><input type="checkbox" /> PG &amp; E</label></li>
-        <li class="list-group-item chechbox"><label><input type="checkbox" /> Other Utility Service</label></li>
+        <ul class="list-group">
+            <li class="list-group-item chechbox"><label><input type="checkbox" /> Sewege</label></li>
+            <li class="list-group-item chechbox"><label><input type="checkbox" /> SF Water</label></li>
+            <li class="list-group-item chechbox"><label><input type="checkbox" /> PG &amp; E</label></li>
+            <li class="list-group-item chechbox"><label><input type="checkbox" /> Other Utility Service</label></li>
+        </ul>
+            <button class="form-control btn btn-block btn-default">
+                Continue
+            </button>
+</form>
 
-        <button class="form-control btn btn-block btn-default">
-            Continue
-        </button>
-    </form>
-</ul>
 
 </div>
 

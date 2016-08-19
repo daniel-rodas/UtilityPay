@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace UtilityPay.Interfaces
 {
-    interface IUtilityServiceAccount
+    public interface IUtilityServiceAccount
     {
+        string DoSomething();
     }
 }

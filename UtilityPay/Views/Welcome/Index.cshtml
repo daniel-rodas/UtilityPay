@@ -1,18 +1,15 @@
 ﻿@{
     Layout = "~/Views/Welcome/_LayoutWelcome.cshtml";
 }
-
-<div class="container">
     <h1>@ViewBag.ValueProposition</h1>
-    @{ 
-        var ButtonText = (string) ViewBag.NextButtonValue;
-        var WelcomeStep = (int) ViewBag.WelcomeStep;
+    @{
+        var ButtonText = (string)ViewBag.NextButtonValue;
+        var WelcomeStep = (int)ViewBag.WelcomeStep;
     }
 
-    @Html.ActionLink( ButtonText, "Step", "Welcome", new { step = WelcomeStep }, new { @class = "btn btn-lg btn-block btn-primary" })
+    @Html.ActionLink(ButtonText, "Step", "Welcome", new { step = WelcomeStep }, new { @class = "btn btn-lg btn-block btn-primary" })
     @Html.ActionLink("Skip", "Register", "Account", null, new { @class = "btn btn-lg btn-block btn-default" })
 
-</div>
 
 
 

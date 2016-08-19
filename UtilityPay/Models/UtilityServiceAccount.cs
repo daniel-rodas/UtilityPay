@@ -1,5 +1,6 @@
 namespace UtilityPay.Models
 {
+    using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -21,17 +22,23 @@ namespace UtilityPay.Models
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        public virtual DbSet<ApplicationUser> Consumer { get; set; }
+        //public virtual DbSet<ApplicationUser> Consumer { get; set; }
     }
 
-    public class UtilityServiceAccountModel : IUtilityServiceAccount
+    public class UtilityServiceAccount : IUtilityServiceAccount
     {
+        public UtilityServiceAccount() { }
         public int Id { get; set; }
         public string Name { get; set; }
         public string AccountNumber { get; set; }
 
-        public int ConsumerId { get; set; }
-        public virtual Consumer Consumer { get; set; }
+        //public int ConsumerId { get; set; }
+        //public virtual Consumer Consumer { get; set; }
+
+        public string DoSomething()
+        {
+            return "Congratulations you reached DoSomething.";
+        }
     }
 
 }
